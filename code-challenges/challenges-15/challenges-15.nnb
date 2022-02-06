@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function equalizeArray(arr) {\n    \n    let  maxValue = 0;\n    \n    let values = arr.reduce((previousValue, currentValue) => { \n        \n        previousValue[currentValue] = (previousValue[currentValue] || 0) + 1;\n\n        previousValue[currentValue] > maxValue && (maxValue = previousValue[currentValue]);\n        \n        return previousValue;\n      \n    }, []);\n\n    return arr.length - maxValue;\n    \n    \n}"
             ],
             "outputs": []
         },
